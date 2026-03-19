@@ -131,4 +131,9 @@ public class RabbitMQConfig {
     public Jackson2JsonMessageConverter messageConverter() {
         return new Jackson2JsonMessageConverter();
     }
+
+    @Bean
+    public void hello() {
+        System.out.println("hello");
+    }
 }
